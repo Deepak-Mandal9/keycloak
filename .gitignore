@@ -1,0 +1,73 @@
+# Data directories - runtime and persistent data
+data/
+data/*
+
+# Build artifacts and compiled libraries
+lib/app/
+lib/lib/
+lib/quarkus/
+
+# Temporary and cache files
+*.log
+*.tmp
+*.cache
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.classpath
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+.eclipse/
+
+# OS-specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# Maven and Gradle build files (if used)
+target/
+build/
+.gradle/
+gradlew
+gradlew.bat
+
+# Node.js (if applicable)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python (if applicable)
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Transaction logs and database files
+data/h2/
+data/tmp/
+data/transaction-logs/
+
+# Local configuration files (if they contain secrets)
+conf/keycloak.conf.local
+conf/.env.local
+
+# Dependency lock files (optional, depends on project policy)
+*.lock
+
+# System and environment files
+.env
+.env.local
+*.pid
