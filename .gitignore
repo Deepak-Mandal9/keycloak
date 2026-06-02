@@ -1,73 +1,150 @@
+# ========== RUNTIME & DATA ==========
 # Data directories - runtime and persistent data
 data/
-data/*
 
-# Build artifacts and compiled libraries
+# Database files
+*.db
+*.sqlite
+
+# ========== BUILD ARTIFACTS & COMPILED LIBRARIES ==========
+# Pre-built libraries (not source code)
 lib/app/
 lib/lib/
 lib/quarkus/
+quarkus-run.jar
 
-# Temporary and cache files
+# Build outputs
+target/
+build/
+dist/
+
+# Gradle
+.gradle/
+gradlew
+gradlew.bat
+gradle.properties
+
+# ========== TEMPORARY & CACHE FILES ==========
 *.log
+logs/
 *.tmp
 *.cache
 *.swp
 *.swo
 *~
 .DS_Store
-Thumbs.db
-
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-.classpath
-.project
-.settings/
-*.sublime-project
-*.sublime-workspace
-.eclipse/
-
-# OS-specific files
-.DS_Store
 .AppleDouble
 .LSOverride
 Thumbs.db
 Desktop.ini
+ehthumbs.db
 
-# Maven and Gradle build files (if used)
-target/
-build/
-.gradle/
-gradlew
-gradlew.bat
+# ========== IDE & EDITOR FILES ==========
+# VS Code
+.vscode/
+*.code-workspace
 
-# Node.js (if applicable)
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+*.iml
+
+# Eclipse
+.eclipse/
+.classpath
+.project
+.settings/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Other IDEs
+.netbeans/
+nbproject/
+*.sublime-settings
+
+# ========== MAVEN & GRADLE ==========
+.mvn/
+*.pom
+*.pom.asc
+
+# ========== NODE.JS (if applicable) ==========
 node_modules/
 npm-debug.log
+npm-error.log
 yarn-error.log
+package-lock.json
+yarn.lock
 
-# Python (if applicable)
+# ========== PYTHON (if applicable) ==========
 __pycache__/
 *.py[cod]
 *.egg-info/
-dist/
+.Python
+env/
+venv/
+ENV/
 build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
 
-# Transaction logs and database files
-data/h2/
-data/tmp/
-data/transaction-logs/
-
-# Local configuration files (if they contain secrets)
-conf/keycloak.conf.local
-conf/.env.local
-
-# Dependency lock files (optional, depends on project policy)
-*.lock
-
-# System and environment files
+# ========== ENVIRONMENT & SECRETS ==========
+# Local environment files (secrets should NEVER be committed)
 .env
 .env.local
+.env.*.local
+.env.production.local
+
+# Local keycloak config
+conf/keycloak.conf.local
+
+# ========== RUNTIME FILES ==========
 *.pid
+*.lock
+
+# ========== OS-SPECIFIC ==========
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+.nfsXXXXXXXXXXXXXX
+
+# ========== DEVELOPMENT TOOLS ==========
+# Backup files
+*.backup
+*.bak
+*.swp
+*.swo
+
+# Temporary directories
+tmp/
+temp/
+
+# ========== CI/CD LOGS ==========
+.travis.yml.log
+circle.yml.log

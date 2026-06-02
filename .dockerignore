@@ -1,0 +1,70 @@
+# Git files
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+README.md
+*.md
+docs/
+
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# Data directories (don't copy to image)
+data/
+data/h2/
+data/tmp/
+data/transaction-logs/
+
+# Build artifacts
+build/
+target/
+dist/
+.gradle/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# GitHub workflows
+.github/
+
+# CI/CD files
+.circleci/
+.travis.yml
+Jenkinsfile
+
+# Lock files
+*.lock
+
+# Temporary files
+*.log
+*.tmp
+*.cache
+*.pid
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# Development files
+docker-compose.yml
+docker-compose.*.yml
